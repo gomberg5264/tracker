@@ -1,32 +1,50 @@
-
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <link href="style.css" rel="stylesheet">
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Agosto App Script Exercise</title>
-    
+	<title>Google-Apps-Script Order Tracking</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <br><br>
-        <h1 id="iris" class="text-center display-3">Agosto AppScript Order Tracking</h1>
-        <br><br>
-        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeXBflt0KFigNXJt11SOnctPfXUhp1488XArTvhYlv0ITn8YQ/formResponse" target=”_self” method=”POST”>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Name</label>
-                <input class="form-control" aria-describedby="emailHelp" placeholder="Enter name" name="entry.1670235207">
-            </div>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Email Address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="entry.952451320">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                    else.</small>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-    </div>
-</body>
+	<div class="container-contact100">
+		<div class="wrap-contact100">
 
+			<form class="contact100-form validate-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeXBflt0KFigNXJt11SOnctPfXUhp1488XArTvhYlv0ITn8YQ/formResponse" target=”_self” method=”POST”>
+				<span class="contact100-form-title">
+					Order Form
+				</span>
+
+				<label class="label-input100" for="first-name">Your Name *</label>
+				<div class="wrap-input100 rs1 validate-input">
+					<input id="first-name" class="input100" type="text" name="entry.1670235207" placeholder="Name">
+					<span class="focus-input100"></span>
+				</div>
+			
+				<label class="label-input100" for="email">Email Address *</label>
+				<div class="wrap-input100 validate-input">
+					<input id="email" class="input100" type="text"  name="entry.952451320" placeholder="Eg. example@email.com">
+					<span class="focus-input100"></span>
+				</div>
+
+				<!-- <label class="label-input100" for="message">Message *</label>
+				<div class="wrap-input100 validate-input">
+					<textarea id="message" class="input100" name="message" placeholder="Please enter your comments..."></textarea>
+					<span class="focus-input100"></span>
+				</div> -->
+
+				<div class="container-contact100-form-btn">
+					<button class="contact100-form-btn">
+						<span>
+							Submit
+							<i class="zmdi zmdi-arrow-right m-l-8"></i>
+						</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+</body>
 </html>
+
